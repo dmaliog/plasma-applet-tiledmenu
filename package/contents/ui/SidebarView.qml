@@ -54,18 +54,31 @@ Item {
 				onClicked: searchView.showTilesOnly()
 				checked: searchView.showingOnlyTiles
 				visible: checked || plasmoid.configuration.defaultAppListView == 'TilesOnly'
+
+				background: Rectangle {
+					color: "transparent"
+				}
 			}
 			SidebarViewButton {
 				appletIconName: "view-list-alphabetically"
 				text: i18n("Alphabetical")
 				onClicked: appsView.showAppsAlphabetically()
 				checked: searchView.showingAppsAlphabetically
+
+				background: Rectangle {
+					color: "transparent"
+				}
+
 			}
 			SidebarViewButton {
 				appletIconName: 'view-list-categorically'
 				text: i18n("Categories")
 				onClicked:  appsView.showAppsCategorically()
 				checked: searchView.showingAppsCategorically
+
+				background: Rectangle {
+					color: "transparent"
+				}
 			}
 			// SidebarItem {
 			// 	icon.name: 'system-search-symbolic'
